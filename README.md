@@ -3,10 +3,10 @@
 This contains examples on how observables work and how their use can be leveraged for asyn programming
 
 # How to run
-Clone the branch to your local system.
-Run `npm install` to install all packages
-Run `npm start` to compile and run your solution
-Visit http://localhost:4200 on your browser
+- Clone the branch to your local system.
+- Run `npm install` to install all packages
+- Run `npm start` to compile and run your solution
+- Visit http://localhost:4200 on your browser
 
 # Components
 
