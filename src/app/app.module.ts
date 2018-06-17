@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SimpleObservableComponent } from './components/simple-observable/simple-observable.component';
+import { ObservableEventsComponent } from './components/observable-events/observable-events.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SimpleObservableComponent,
+    ObservableEventsComponent
   ],
   imports: [
     BrowserModule
