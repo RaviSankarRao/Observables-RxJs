@@ -18,3 +18,6 @@ Demosntrates how to create an Observable for an Observer and use of the sequence
 - Emits a value using `next`
 - Handles error using `error`
 - Handles complete signla using `complete`
+
+## dynamic-component
+- Uses `ComponentFactoryResolver` to load components dynamically
