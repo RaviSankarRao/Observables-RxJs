@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs/Observable";
 import { Observer } from "rxjs/Observer";
+import { Message } from "../../models/Message.model";
 
-interface Message {
-  timeStamp: Date;
-  message: string;
-}
+
 
 @Component({
   selector: 'app-observable-events',
@@ -14,7 +12,9 @@ interface Message {
 })
 export class ObservableEventsComponent implements OnInit {
 
-  public messages: Message[] = [];
+  public messages: Message[] = [
+    { timeStamp: new Date(), message: 'Component loaded.'}
+  ];
 
   constructor() { }
 

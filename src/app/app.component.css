@@ -1,13 +1,15 @@
 .main-div {
     margin: 5px;
     padding: 10px;
+    height: 100%
 }
 
 .app-name {
-        margin-left: 10px;
+    margin-left: 10px;
 }
 
 .action-div {
     margin: 10px;
     padding: 10px;
+    height: 90%
 }

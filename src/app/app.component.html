@@ -1,21 +1,40 @@
 <div class="main-div">
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo app-name">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
+      <a href="javascript:void(0)" class="brand-logo app-name">Observables and Routing</a>
     </div>
   </nav>
-</div>
+
 
 <div class="action-div">
-  
-  <app-simple-observable></app-simple-observable>
 
-  <app-observable-events></app-observable-events>
+    <div class="collection">
+      <a *ngFor="let component of allComponents" 
+        (click)="createComponent(component)" 
+        class="collection-item"
+        [ngClass]="{ 'active': componentData.component === component.component }"> {{component.name}} </a>
+    </div>
+
+  <app-dynamic-component *ngIf="componentData.component" [componentData]="componentData"></app-dynamic-component>
+  
 </div>
 
+<!--<footer class="page-footer red lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">For education purposes only</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © {{ currentYear }} Content not owned by me
+      <a class="grey-text text-lighten-4 right" href="https://marvel.com" target="_blank">Reference</a>
+      </div>
+    </div>
+  </footer>-->
+
+  </div>
 
