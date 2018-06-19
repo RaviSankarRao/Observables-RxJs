@@ -10,7 +10,7 @@ This contains examples on how observables work and how their use can be leverage
 
 # Components
 - Located inside [src/app/components](https://github.com/RaviSankarRao/Observables-RxJs/tree/master/src/app/components)
-## simple-observable
+## [simple-observable](https://github.com/RaviSankarRao/Observables-RxJs/tree/master/src/app/components/simple-observable)
 A simple observable that uses `interval` function to send continous data packages in a given interval of time
 
 ## observable-events
