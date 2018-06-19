@@ -19,5 +19,8 @@ Demosntrates how to create an Observable for an Observer and use of the sequence
 - Handles error using `error`
 - Handles complete signla using `complete`
 
+## using-from-event
+Uses `Observable.fromEvent` demonstrating how to create observables from events.
+
 ## dynamic-component
 - Uses `ComponentFactoryResolver` to load components dynamically
