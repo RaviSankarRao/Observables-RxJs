@@ -13,14 +13,14 @@ This contains examples on how observables work and how their use can be leverage
 ## [simple-observable](https://github.com/RaviSankarRao/Observables-RxJs/tree/master/src/app/components/simple-observable)
 A simple observable that uses `interval` function to send continous data packages in a given interval of time
 
-## observable-events
+## [observable-events](https://github.com/RaviSankarRao/Observables-RxJs/tree/master/src/app/components/observable-events)
 Demosntrates how to create an Observable for an Observer and use of the sequence of ongoing events ordered in time
 - Emits a value using `next`
 - Handles error using `error`
 - Handles complete signla using `complete`
 
-## using-from-event
+## [using-from-event](https://github.com/RaviSankarRao/Observables-RxJs/tree/master/src/app/components/using-from-event)
 Uses `Observable.fromEvent` demonstrating how to create observables from events.
 
-## dynamic-component
+## [dynamic-component](https://github.com/RaviSankarRao/Observables-RxJs/tree/master/src/app/components/dynamic-component)
 - Uses `ComponentFactoryResolver` to load components dynamically
