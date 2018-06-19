@@ -10,6 +10,7 @@ import { EmployeeCardComponent } from './components/employee-card/employee-card.
 import { AppRoutingModule } from './/app-routing.module';
 import { EmployeesComponent } from './components/employees/employees.component';
 import { DynamicComponentComponent } from './components/dynamic-component/dynamic-component.component';
+import { UsingFromEventComponent } from './components/using-from-event/using-from-event.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DynamicComponentComponent } from './components/dynamic-component/dynami
     EmployeeDetailsComponent,
     EmployeeCardComponent,
     EmployeesComponent,
-    DynamicComponentComponent
+    DynamicComponentComponent,
+    UsingFromEventComponent
   ],
   imports: [
     BrowserModule,

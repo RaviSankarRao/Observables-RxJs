@@ -15,6 +15,8 @@
         [ngClass]="{ 'active': componentData.component === component.component }"> {{component.name}} </a>
     </div>
 
+    <router-outlet></router-outlet>
+
   <app-dynamic-component *ngIf="componentData.component" [componentData]="componentData"></app-dynamic-component>
   
 </div>

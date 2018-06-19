@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from "@angular/router";
 import { Employee } from "../../models/Employee.model";
 
 @Component({
@@ -11,9 +12,14 @@ export class EmployeeCardComponent implements OnInit {
   @Input()
   public employee: Employee;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  public showEMployeeDetails(): void {
+    window.open('/avenger');
+    //this.router.navigate(['/avenger']);
   }
 
 }

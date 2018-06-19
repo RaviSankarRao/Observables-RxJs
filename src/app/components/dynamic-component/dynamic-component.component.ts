@@ -5,12 +5,14 @@ import { EmployeesComponent } from "../employees/employees.component";
 import { Content } from "../../models/Content.model";
 import { SimpleObservableComponent } from "../simple-observable/simple-observable.component";
 import { ObservableEventsComponent } from "../observable-events/observable-events.component";
+import { UsingFromEventComponent } from "../using-from-event/using-from-event.component";
 
 @Component({
   selector: 'app-dynamic-component',
   template: `<div #dynamicComponentContainer></div>`,
   entryComponents: [
-    EmployeesComponent, SimpleObservableComponent, ObservableEventsComponent],
+    EmployeesComponent, SimpleObservableComponent, ObservableEventsComponent,
+    UsingFromEventComponent],
 })
 export class DynamicComponentComponent implements OnInit {
 
@@ -60,6 +62,7 @@ export function getComponents(): Content[] {
   const allComponents: Content[] = [
     { component: SimpleObservableComponent, name: 'Simple Observable', description: 'Demonstrates Routing and Observables'  },
     { component: ObservableEventsComponent, name: 'Observable Events', description: 'Demonstrates Routing and Observables'  },
+    { component: UsingFromEventComponent, name: 'using fromEvent', description: 'Demonstrates Routing and Observables'  },
     { component: EmployeesComponent, name: 'For Routing', description: 'Demonstrates Routing and Observables'  },
   ];
     return allComponents;

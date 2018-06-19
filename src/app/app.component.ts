@@ -6,6 +6,8 @@ import { EmployeesComponent } from "./components/employees/employees.component";
 import { getComponents } from "./components/dynamic-component/dynamic-component.component";
 import { Content } from "./models/Content.model";
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,10 +19,10 @@ export class AppComponent implements OnInit {
   public currentYear: number;
   public componentData = {
   };
-  public allComponents = getComponents()
-  
+  public allComponents = getComponents();
   
   ngOnInit() {
+    
     this.currentYear = this.currentDate.getFullYear();
   }
 
